@@ -1,5 +1,5 @@
 {
-  "name": "nauka-gita-5",
+  "name": "Landing-Page",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -37,11 +37,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jedwab/nauka-gita-4.git"
+    "url": "git+https://github.com/jedwab/Landing-Page.git"
   },
   "bugs": {
-    "url": "https://github.com/jedwab/nauka-gita-4/issues"
+    "url": "https://github.com/jedwab/Landing-Page/issues"
   },
-  "homepage": "https://github.com/jedwab/nauka-gita-4#readme",
+  "homepage": "https://github.com/jedwab/Landing-Page#readme",
   "description": ""
 }
