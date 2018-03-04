@@ -14,26 +14,24 @@ p {
     font-weight: 300;
 }
 
-header {
-	text-align: center;
-	height: 100vh;
-	width: 100vw;
-
-}
 section {
 	position: relative; 
 }
  section > .container {
     padding-top: 100px;
 	padding-bottom: 150px; 
-}
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px; 
+ }
 
-.container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px; 
+header {
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+
 }
 
 .header-logo {
@@ -46,6 +44,7 @@ section {
 	position: absolute;
 	height: 100vh;
 	width: 100vw;
+	
 }
 .header-text {
 	width: 100%;
@@ -81,6 +80,10 @@ section {
 	left: 49%;
 }
 
+.scroller img:hover {
+	transform: scale(1.2, 1.2); 
+}
+
 #about-us p {
 	max-height: 183px;
 	color: #3c3c3c;
@@ -100,7 +103,6 @@ section {
 	width: 60%;
     position: relative;
     top: -38px;
-	left: 38%;
 	color: #3c3c3c;
 	font-family: Lato;
 	font-size: 34px;
@@ -108,7 +110,9 @@ section {
 	text-transform: uppercase;
 	letter-spacing: 8.95px;
 	margin-bottom: 15px;
-	
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
 }
 .bordered::before {
 	left: 0;
@@ -162,6 +166,13 @@ section {
 	background-repeat: no-repeat;
 
 }
+
+.container-foto {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 #our-works [class*="col-"] {
 	margin-bottom: 12px;
 	padding-right: 0;
@@ -205,15 +216,25 @@ section {
 	-o-transition: all 1s ease;
   }
    
-.sidepan [class*="image-"]:hover {
+.sidepan [class*="image-"]:hover  {
 	-o-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-webkit-transition: all 0.6s;
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
+	border: 4px solid black;
+	z-index: 1;
 	
 }
+#our-works .sidepan div:hover h3 {
+	color: black;
+}
+
+#contact-us {
+	padding-bottom: 100px;
+}
+
 .contact-button {
 	display: block;
 	margin: 30px auto 0 auto;
@@ -228,17 +249,25 @@ section {
 	text-align: center;
 	transition: 0.4s ease-in-out; 
 	margin-bottom: 60px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 180px;
+	
 }
 .contact-button:hover {
-	transform: scale(1.1, 1.1); 
 	background-color:#A9B4C8;
 	color:black;
 	text-decoration: none;
 	border: 2px solid black;
 	font-weight: 500;
+	transform: scale(1.1, 1.1); 
 }
 #contact-us > .container {
 	padding-bottom: 50px;
+}
+#contact-us p {
+	padding-bottom: 100px;
 }
 #footer > .container {
     font-size: 14px;
