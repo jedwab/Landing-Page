@@ -85,11 +85,12 @@ header {
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 }
-.scroller img {	
-	-webkit-transition: 0.4s ease-in-out; 	
-	-o-transition: 0.4s ease-in-out; 	
+
+.scroller img {
+	-webkit-transition: 0.4s ease-in-out;
+	-o-transition: 0.4s ease-in-out;
 	transition: 0.4s ease-in-out;
-}	
+}
 
 .scroller img:hover {
 	-webkit-transform: scale(1.2, 1.2);
@@ -258,6 +259,7 @@ header {
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	top: 180px;
+	text-decoration: none;
 	
 }
 .contact-button:hover {
@@ -268,7 +270,8 @@ header {
 	font-weight: 500;
 	-webkit-transform: translateX(-50%) scale(1.1, 1.1);
 	    -ms-transform: translateX(-50%) scale(1.1, 1.1);
-	        transform: translateX(-50%) scale(1.1, 1.1);
+	        transform: translateX(-50%) scale(1.1, 1.1); 
+	display: block;
 }
 #contact-us > .container {
 	padding-bottom: 50px;
@@ -284,4 +287,46 @@ header {
 }
 #footer .container  img {
 	margin-right: 20px;
+}
+@media (max-width: 767px) {
+
+	.working {
+		font-size: 44px;
+	}
+	.buttons-container {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+	  margin-top: 0; 
+	}
+	.buttons-container .service {
+		margin: 6px 0 0; 
+	}
+	.buttons-container .service-2 {
+		margin: 6px 0 0; 
+	}
+	.buttons-container .service-5 {
+		margin: 6px 0 0; 
+	}
+  
+	.contact-button {
+	  padding: 15px 30px; 
+	} 
+	section > .container {
+		padding-bottom: 95px;
+		padding-left: 50px;
+		padding-right: 50px;
+	
+	}
+	#contact-us > .container {
+		padding-bottom: 0px;
+		padding-top: 30px;
+	}
+	#footer > .container {
+		padding-top: 0;
+	}
 }
