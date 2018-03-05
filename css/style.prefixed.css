@@ -80,16 +80,21 @@ header {
 .scroller {
 	position: absolute;
 	bottom: 30px;
-	left: 49%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
+.scroller img {	
+	-webkit-transition: 0.4s ease-in-out; 	
+	-o-transition: 0.4s ease-in-out; 	
+	transition: 0.4s ease-in-out;
+}	
 
 .scroller img:hover {
 	-webkit-transform: scale(1.2, 1.2);
 	    -ms-transform: scale(1.2, 1.2);
 	        transform: scale(1.2, 1.2); 
-	-webkit-transition: 0.4s ease-in-out; 
-	-o-transition: 0.4s ease-in-out; 
-	transition: 0.4s ease-in-out;
 }
 
 #about-us p {
@@ -261,9 +266,9 @@ header {
 	text-decoration: none;
 	border: 2px solid black;
 	font-weight: 500;
-	-webkit-transform: scale(1.1, 1.1);
-	    -ms-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1); 
+	-webkit-transform: translateX(-50%) scale(1.1, 1.1);
+	    -ms-transform: translateX(-50%) scale(1.1, 1.1);
+	        transform: translateX(-50%) scale(1.1, 1.1);
 }
 #contact-us > .container {
 	padding-bottom: 50px;
