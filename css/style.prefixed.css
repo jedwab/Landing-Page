@@ -99,7 +99,6 @@ header {
 }
 
 #about-us p {
-	max-height: 183px;
 	color: #3c3c3c;
 	font-family: Lato;
 	font-size: 16px;
@@ -157,9 +156,8 @@ header {
 	background-image: url("/images/layer-4.png");
 	background-size: cover;
     background-position: right center;
-    height: calc(100vw / 4);
-    min-height: 400px;
 	background-attachment: fixed;
+
 }
 
 #services p, h2 {
@@ -233,51 +231,37 @@ header {
 	  background-image: url("/images/6.png"); 
 }
 
-#contact-us, .container-fluid {
-	padding-bottom: 80px;
-}
+
 
 .contact-button {
-	display: block;
-	margin: 30px auto 0 auto;
-	width: 80%;
-	max-width: 400px;
-	text-transform: uppercase;
-	font-weight: 400;
-	line-height: 50px;
+
+	display: inline-block;
+	margin: 20px 0;
 	border: none;
+	border-radius: 0;
 	background-color: #3c3c3c;
+	padding: 15px 100px;
 	color: #fff;
-	text-align: center;
-	-webkit-transition: 0.4s ease-in-out;
-	-o-transition: 0.4s ease-in-out;
-	transition: 0.4s ease-in-out; 
-	margin-bottom: 60px;
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
-	top: 180px;
+	font-weight: 300;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
 	text-decoration: none;
-	
+	letter-spacing: 3px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s; 
+	left: 50%;
 }
 .contact-button:hover {
 	background-color:#A9B4C8;
-	color:black;
-	text-decoration: none;
-	border: 2px solid black;
-	font-weight: 500;
-	-webkit-transform: translateX(-50%) scale(1.1, 1.1);
-	    -ms-transform: translateX(-50%) scale(1.1, 1.1);
-	        transform: translateX(-50%) scale(1.1, 1.1); 
-	display: block;
+	
 }
 #contact-us > .container {
 	padding-bottom: 50px;
 }
 #contact-us p {
-	padding-bottom: 100px;
+	padding-bottom: 30px;
 }
 #footer > .container {
     font-size: 14px;
@@ -323,10 +307,54 @@ header {
 	
 	}
 	#contact-us > .container {
-		padding-bottom: 0px;
-		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-top: 50px;
 	}
 	#footer > .container {
-		padding-top: 0;
+		padding-top: 30px;
+	}
+	@media (max-width: 640px) {
+		p {
+			margin: 10px auto;
+		}
+
+		#services > .container {
+			padding-top: 60px;
+			padding-bottom: 55px
+		}
+		.bordered h2	{
+			word-break: break-word;
+			font-size: 24px;
+		}
+		.contact-button {
+			line-height: 35px;
+			width: 60%;
+			padding: 19px;
+		}	
+	
+	}
+	@media (max-width: 360px) {
+		.contact-button {
+			line-height: 22px;
+			margin-top: 0;
+			width: 60%;
+			text-align: center;
+		}
+		.working {
+			font-size: 24px;
+		}
+	}
+	@media (max-height: 640px) {
+		.working {
+			font-size: 30px;
+		}
+		.header-logo {
+			top: 20px;
+			width: 42px;
+			height: 47px;
+		}
+		.scroller {
+			bottom: 15px;
+		}
 	}
 }
