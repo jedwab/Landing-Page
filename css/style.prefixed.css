@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box; }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+header [class*="col-"] {
+  padding-top: 0;
+  height: 50%; }
+
+.row:before, .row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 30px; }
+
+.col-1 {
+  width: 8.334%; }
+
+.col-2 {
+  width: 16.667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.334%; }
+
+.col-5 {
+  width: 41.667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.334%; }
+
+.col-8 {
+  width: 66.667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.334%; }
+
+.col-11 {
+  width: 91.667%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-offset-0 {
+  margin-left: 0; }
+
+.col-offset-1 {
+  margin-left: 8.334%; }
+
+.col-offset-2 {
+  margin-left: 16.667%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.334%; }
+
+.col-offset-5 {
+  margin-left: 41.667%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.334%; }
+
+.col-offset-8 {
+  margin-left: 66.667%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.334%; }
+
+.col-offset-11 {
+  margin-left: 91.667%; }
+
+.col-offset-12 {
+  margin-left: 100%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #fff; }
+
+header {
+  background-image: url("/images/layer-13.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  background-attachment: fixed; }
+  header .logo {
+    position: relative;
+    top: 56px; }
+  header h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0; }
+  header p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px; }
+  header .iphone {
+    position: absolute;
+    bottom: -23vh;
+    height: 90vh;
+    right: 12vw; }
+  header .takpapp-container {
+    position: absolute;
+    top: 47%;
+    left: -50px;
+    transform: rotate(-90deg); }
+  header p {
+    margin-right: 20px;
+    display: inline-block; }
+  header .perfect {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.3px; }
+  header .takpapp {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3px; }
+
+/*# sourceMappingURL=style.prefixed.css.map */
