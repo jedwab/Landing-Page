@@ -11,6 +11,10 @@ header [class*="col-"] {
     height: 50%;
 }
 
+header .container .row:first-child {
+    height: 48vh;
+}
+
 .row:before, .row:after {
 	content: "";
 	clear: both;
@@ -20,7 +24,7 @@ header [class*="col-"] {
 [class*="col-"] {
 	float: left;
 	min-height: 1px;
-	padding: 30px;
+	padding: 60px;
 }
 
 .col-1 {width: 8.334%}
@@ -53,6 +57,9 @@ header [class*="col-"] {
 
 $font: 'Open Sans', sans-serif;
 $font-color: #fff;
+$dark-font-color: #222626;
+$grey-paragraph: #959595;
+
 body {
     font-family: $font;
     margin: 0;
@@ -66,9 +73,10 @@ header {
     height: 100vh;
     background-attachment: fixed;
 
-    .logo {
-        position: relative;
-        top: 56px;
+    .container {
+        .row:first-child {
+            height: 48vh;
+        }
     }
 
     h1 {
@@ -110,5 +118,49 @@ header {
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
             }
-    
 }
+#text {
+    h2 {
+        color: $dark-font-color;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    p {
+        color: $grey-paragraph;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+
+
+    }
+}
+#gallery [class*="col-"] {
+        height: 250px;
+        position: relative;
+        padding: 0;
+
+            .gallery-1 {
+                background-color: #f5989d;
+            }
+            .gallery-2 {
+                background-color: #615f7d;
+            }
+            .gallery-3 {
+
+            }
+            .gallery-4 {
+                background-color: #bd8cbf;
+            }
+            .gallery-5 {
+                background-image: url("/images/layer-5.png");
+            }
+            .gallery-6 {
+                background-color: #82ca9c;
+            }
+            .gallery-7 {
+                background-image:url("images...")
+            }
+        }
+
+    

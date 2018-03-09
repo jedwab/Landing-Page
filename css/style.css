@@ -9,6 +9,9 @@ header [class*="col-"] {
   padding-top: 0;
   height: 50%; }
 
+header .container .row:first-child {
+  height: 48vh; }
+
 .row:before, .row:after {
   content: "";
   clear: both;
@@ -17,7 +20,7 @@ header [class*="col-"] {
 [class*="col-"] {
   float: left;
   min-height: 1px;
-  padding: 30px; }
+  padding: 60px; }
 
 .col-1 {
   width: 8.334%; }
@@ -105,9 +108,8 @@ header {
   background-position: bottom;
   height: 100vh;
   background-attachment: fixed; }
-  header .logo {
-    position: relative;
-    top: 56px; }
+  header .container .row:first-child {
+    height: 48vh; }
   header h1 {
     font-size: 60px;
     font-weight: 300;
@@ -140,5 +142,33 @@ header {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.3px; }
+
+#text h2 {
+  color: #222626;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 24px; }
+#text p {
+  color: #959595;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+#gallery [class*="col-"] {
+  height: 250px;
+  position: relative;
+  padding: 0; }
+  #gallery [class*="col-"] .gallery-1 {
+    background-color: #f5989d; }
+  #gallery [class*="col-"] .gallery-2 {
+    background-color: #615f7d; }
+  #gallery [class*="col-"] .gallery-4 {
+    background-color: #bd8cbf; }
+  #gallery [class*="col-"] .gallery-5 {
+    background-image: url("/images/layer-5.png"); }
+  #gallery [class*="col-"] .gallery-6 {
+    background-color: #82ca9c; }
+  #gallery [class*="col-"] .gallery-7 {
+    background-image: url("images..."); }
 
 /*# sourceMappingURL=style.css.map */
