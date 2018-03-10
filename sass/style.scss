@@ -10,9 +10,10 @@ header [class*="col-"] {
     padding-top: 0;
     height: 50%;
 }
-
-header .container .row:first-child {
-    height: 48vh;
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .row:before, .row:after {
@@ -24,7 +25,7 @@ header .container .row:first-child {
 [class*="col-"] {
 	float: left;
 	min-height: 1px;
-	padding: 60px;
+	padding: 0;
 }
 
 .col-1 {width: 8.334%}
@@ -59,6 +60,8 @@ $font: 'Open Sans', sans-serif;
 $font-color: #fff;
 $dark-font-color: #222626;
 $grey-paragraph: #959595;
+$details-color: #67676d;
+$primary-green:  #82ca9c;
 
 body {
     font-family: $font;
@@ -67,11 +70,16 @@ body {
 }
 
 header {
-    background-image: url("/images/layer-13.png");
+    background-image: url("/images/3-layers.png");
     background-size: cover;
-    background-position: bottom;
+   
     height: 100vh;
     background-attachment: fixed;
+    
+    header [class*="col-"] {
+        padding-top: 0;
+        height: 50%;
+    }
 
     .container {
         .row:first-child {
@@ -114,12 +122,14 @@ header {
             }
             .takpapp {
                 font-size: 12px;
-                font-weight: 400;
+                font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
             }
 }
 #text {
+    margin: 100 0;
+
     h2 {
         color: $dark-font-color;
         font-size: 35px;
@@ -131,15 +141,47 @@ header {
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
+        margin-right: 30px;
 
 
     }
+
 }
-#gallery [class*="col-"] {
+#gallery  {
+    [class*="col-"] {
         height: 250px;
         position: relative;
-        padding: 0;
+        padding: 30px; }
 
+            h4 {
+                font-size: 30px;
+                font-weight: 300;
+                margin: 0;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            a {
+                text-decoration: none;
+                color: $font-color;
+                font-size: 14px;
+                font-weight: 700;
+            
+        
+            }
+            .fa {
+                margin-left: 15px;
+                margin-bottom: 100px;
+            }
+            .ship {
+                margin-top: 70px;
+            }
+            .heart {
+                margin-left: 250px
+            }
+       
             .gallery-1 {
                 background-color: #f5989d;
             }
@@ -147,20 +189,168 @@ header {
                 background-color: #615f7d;
             }
             .gallery-3 {
-
+                background-image: url("https://images.pexels.com/photos/106400/pexels-photo-106400.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+                background-size: cover;
+                background-position: bottom;
             }
             .gallery-4 {
                 background-color: #bd8cbf;
             }
             .gallery-5 {
-                background-image: url("/images/layer-5.png");
+                background-image: url("https://images.pexels.com/photos/910154/pexels-photo-910154.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+                background-size: cover;
+                background-position: center;
             }
             .gallery-6 {
-                background-color: #82ca9c;
+                background-color: $primary-green;
             }
             .gallery-7 {
-                background-image:url("images...")
+                background-image: url("https://images.unsplash.com/photo-1495313378299-84a779ccc4b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3eb5d138771abd1b4831b35e87c57ba5&auto=format&fit=crop&w=1050&q=80");
+                background-size: cover;
+            }
+}
+#details {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    h2 {
+        color: $dark-font-color;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    h5 {
+        color: $details-color;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+    }
+    p {
+        color: $grey-paragraph;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-right: 30px;
+
+    }
+    .takpapp-container {
+        position: absolute;
+        top: 10%;
+        left: -115px;
+        transform: rotate(-90deg);
+    }
+            p {
+                margin-right: 20px;
+                display: inline-block;
+            }
+            .takpapp {
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+            }
+}
+ #options {
+     background-image: url("/images/2-layers.png");
+     background-size:cover;
+     min-height: 90vh;
+     background-attachment: fixed;
+     background-position: center;
+     display: flex;
+     align-items: flex-end;
+
+        h1 {
+            color: $font-color;
+            font-size: 60px;
+            font-weight: 300;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+    
+        }
+         [class*="col-"] {
+            height: 70vh;
+    
+         }
+ }
+ #onboard {
+    background-color: $primary-green;
+    padding: 50px 0;
+    
+        h2 {
+            font-size: 35px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        h5 {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 24px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-right: 30px;
+
+        }
+ }
+ #shop {
+     background-color: #f6f7fa;
+     display: flex;
+     padding: 100px 0;
+     align-items: center;
+
+        h2 {
+            color: $dark-font-color;
+            font-size: 35px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        p {
+            color: $grey-paragraph;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-right: 30px;
+        }
+        .top-button {
+            height: 24px;
+            border-radius: 5px;
+            background-color: #e1e1e1;
+            color: $font-color;
+            transition: 0.5s;
+            border:none;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 22px;
+            padding: 0 15px;
+        }
+        .buy {
+            border-radius: 3px;
+            background-color: $primary-green;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            padding: 15px 25px;
+            color: $font-color;
+            border: none;
+            transition: 0.5s;
+
+        }
+        .icons {
+            margin-top:20px;
+            .fa {
+                color: #c5c5c5;
+                font-size: 26px;
+                margin-right: 10px;
             }
         }
-
+}
+footer {
+    background-color: #192431;
+}
     
