@@ -258,6 +258,9 @@ header {
 	background-color:#A9B4C8;
 	
 }
+a:hover {
+	text-decoration:none;
+}
 #contact-us > .container {
 	padding-bottom: 50px;
 }
