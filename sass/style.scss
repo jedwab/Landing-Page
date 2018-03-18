@@ -96,7 +96,7 @@ body {
 }
 
 header {
-    background-image: url("/images/3-layers.png");
+    background-image: url("../images/3-layers.png");
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -125,7 +125,7 @@ header {
         position: absolute;
         bottom: -23vh;
         height: 90vh;
-        right: 12vw;
+        right: 9vw;
     }
     .takpapp-container {
         position: absolute;
@@ -260,7 +260,7 @@ header {
             }
 }
  #options {
-     background-image: url("/images/2-layers.png");
+     background-image: url("../images/2-layers.png");
      background-size:cover;
      min-height: 90vh;
      background-attachment: fixed;
