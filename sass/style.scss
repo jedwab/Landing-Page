@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
 @mixin white-paragraph {
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
-
 }
+
 @mixin grey-paragraph {
     color: $grey-paragraph;
     font-size: 14px;
@@ -20,83 +21,157 @@
     font-weight: 300;
     line-height: 24px;
 }
+
 @mixin h5-header {
     font-weight: 600;
     font-size: 13px;
     line-height: 24px;
 }
+
 @mixin takpapp {
     position: absolute;
     top: 10%;
     left: -115px;
     transform: rotate(-90deg);
-    
 }
-
 
 .row {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 header [class*="col-"] {
     padding-top: 0;
     height: 50%;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 
-.row:before, .row:after {
-	content: "";
-	clear: both;
-	display: table;
+.row:before,
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 [class*="col-"] {
-	float: left;
-	min-height: 1px;
-	padding: 0;
+    float: left;
+    min-height: 1px;
+    padding: 0;
 }
 
+.col-1 {
+    width: 8.334%
+}
 
-.col-1 {width: 8.334%}
-.col-2 {width: 16.667%}
-.col-3 {width: 25%}
-.col-4 {width: 33.334%}
-.col-5 {width: 41.667%}
-.col-6 {width: 50%}
-.col-7 {width: 58.334%}
-.col-8 {width: 66.667%}
-.col-9 {width: 75%}
-.col-10 {width: 83.334%}
-.col-11 {width: 91.667%}
-.col-12 {width: 100%}
+.col-2 {
+    width: 16.667%
+}
 
-.col-offset-0 { margin-left: 0; }
-.col-offset-1 { margin-left: 8.334%; }
-.col-offset-2 { margin-left: 16.667%; }
-.col-offset-3 { margin-left: 25%; }
-.col-offset-4 { margin-left: 33.334%; }
-.col-offset-5 { margin-left: 41.667%; }
-.col-offset-6 { margin-left: 50%; }
-.col-offset-7 { margin-left: 58.334%; }
-.col-offset-8 { margin-left: 66.667%; }
-.col-offset-9 { margin-left: 75%; }
-.col-offset-10 { margin-left: 83.334%; }
-.col-offset-11 { margin-left: 91.667%; }
-.col-offset-12 { margin-left: 100%; }
+.col-3 {
+    width: 25%
+}
 
+.col-4 {
+    width: 33.334%
+}
 
-$font: 'Open Sans', sans-serif;
+.col-5 {
+    width: 41.667%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.334%
+}
+
+.col-8 {
+    width: 66.667%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.334%
+}
+
+.col-11 {
+    width: 91.667%
+}
+
+.col-12 {
+    width: 100%
+}
+
+.col-offset-0 {
+    margin-left: 0;
+}
+
+.col-offset-1 {
+    margin-left: 8.334%;
+}
+
+.col-offset-2 {
+    margin-left: 16.667%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.334%;
+}
+
+.col-offset-5 {
+    margin-left: 41.667%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.334%;
+}
+
+.col-offset-8 {
+    margin-left: 66.667%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.334%;
+}
+
+.col-offset-11 {
+    margin-left: 91.667%;
+}
+
+.col-offset-12 {
+    margin-left: 100%;
+}
+
+$font: 'Open Sans',
+sans-serif;
 $font-color: #fff;
 $dark-font-color: #222626;
 $grey-paragraph: #959595;
 $details-color: #67676d;
-$primary-green:  #82ca9c;
+$primary-green : #82ca9c;
 $button-hover: #bd8cbf;
-
 body {
     font-family: $font;
     margin: 0;
@@ -108,18 +183,15 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    
     header [class*="col-"] {
         padding-top: 0;
         height: 50%;
     }
-
     .container {
         .row:first-child {
             height: 48vh;
         }
     }
-
     h1 {
         font-size: 60px;
         font-weight: 300;
@@ -127,7 +199,7 @@ header {
         margin-bottom: 0;
     }
     p {
-       @include white-paragraph;
+        @include white-paragraph;
     }
     .iphone {
         position: absolute;
@@ -141,106 +213,102 @@ header {
         left: -50px;
         transform: rotate(-90deg);
     }
-            p {
-                margin-right: 20px;
-                display: inline-block;
-            }
-            .perfect {
-                font-size: 12px;
-                font-weight: 300;
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-            }
-            .takpapp {
-                font-size: 12px;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-            }
+    p {
+        margin-right: 20px;
+        display: inline-block;
+    }
+    .perfect {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    .takpapp {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
 }
+
 #text {
     margin: 100 0;
-
     h2 {
         @include h2-header;
         color: $dark-font-color;
-      
     }
     p {
         @include grey-paragraph;
-
     }
-
 }
-#gallery  {
+
+#gallery {
     [class*="col-"] {
         height: 250px;
         position: relative;
-        padding: 30px 30px 0 30px; }
-
-            h4 {
-                font-size: 30px;
-                font-weight: 300;
-                margin: 0;
-            }
-            p {
-                @include white-paragraph
-            }
-            a {
-                text-decoration: none;
-                color: $font-color;
-                font-size: 14px;
-                font-weight: 700;
-                position: absolute;
-                bottom: -85px;
-                display: inline-block;
-        
-            }
-            .fa {
-                margin-left: 15px;
-                margin-bottom: 100px;
-            }
-            .ship {
-                margin-top: 70px;
-            }
-            .heart {
-                margin-left: 400px;
-            }
-       
-            .gallery-1 {
-                background-color: #f5989d;
-            }
-            .gallery-2 {
-                background-color: #615f7d;
-            }
-            .gallery-3 {
-                background-image: url("https://images.pexels.com/photos/106400/pexels-photo-106400.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-                background-size: cover;
-                background-position: bottom;
-            }
-            .gallery-4 {
-                background-color: $button-hover;
-            }
-            .gallery-5 {
-                background-image: url("https://images.pexels.com/photos/910154/pexels-photo-910154.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-                background-size: cover;
-                background-position: center;
-            }
-            .gallery-6 {
-                background-color: $primary-green;
-            }
-            .gallery-7 {
-                background-image: url("https://images.unsplash.com/photo-1495313378299-84a779ccc4b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3eb5d138771abd1b4831b35e87c57ba5&auto=format&fit=crop&w=1050&q=80");
-                background-size: cover;
-            }
+        padding: 30px 30px 0 30px;
+    }
+    h4 {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0;
+    }
+    p {
+        @include white-paragraph
+    }
+    a {
+        text-decoration: none;
+        color: $font-color;
+        font-size: 14px;
+        font-weight: 700;
+        position: absolute;
+        bottom: -85px;
+        display: inline-block;
+    }
+    .fa {
+        margin-left: 15px;
+        margin-bottom: 100px;
+    }
+    .ship {
+        margin-top: 70px;
+    }
+    .heart {
+        margin-left: 400px;
+    }
+    .gallery-1 {
+        background-color: #f5989d;
+    }
+    .gallery-2 {
+        background-color: #615f7d;
+    }
+    .gallery-3 {
+        background-image: url("https://images.pexels.com/photos/106400/pexels-photo-106400.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover;
+        background-position: bottom;
+    }
+    .gallery-4 {
+        background-color: $button-hover;
+    }
+    .gallery-5 {
+        background-image: url("https://images.pexels.com/photos/910154/pexels-photo-910154.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover;
+        background-position: center;
+    }
+    .gallery-6 {
+        background-color: $primary-green;
+    }
+    .gallery-7 {
+        background-image: url("https://images.unsplash.com/photo-1495313378299-84a779ccc4b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3eb5d138771abd1b4831b35e87c57ba5&auto=format&fit=crop&w=1050&q=80");
+        background-size: cover;
+    }
 }
+
 #details {
     margin-top: 70px;
     margin-bottom: 100px;
     h2 {
         @include h2-header;
         color: $dark-font-color;
-        
     }
     h5 {
         @include h5-header;
@@ -248,97 +316,90 @@ header {
     }
     p {
         @include grey-paragraph;
-
     }
     .takpapp-container {
         @include takpapp;
     }
-            p {
-                margin-right: 20px;
-                display: inline-block;
-            }
-            .takpapp {
-                font-size: 12px;
-                font-weight: 400;
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-            }
+    p {
+        margin-right: 20px;
+        display: inline-block;
+    }
+    .takpapp {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
 }
- #options {
-     background-image: url("../images/2-layers.jpg");
-     background-size:cover;
-     min-height: 90vh;
-     background-attachment: fixed;
-     background-position: center;
-     display: flex;
-     align-items: flex-end;
 
-        h1 {
-            color: $font-color;
-            font-size: 60px;
-            font-weight: 300;
-        }
-        p {
-            @include white-paragraph;
-    
-        }
-         [class*="col-"] {
-            height: 70vh;
-    
-         }
- }
- #onboard {
+#options {
+    background-image: url("../images/2-layers.jpg");
+    background-size: cover;
+    min-height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    h1 {
+        color: $font-color;
+        font-size: 60px;
+        font-weight: 300;
+    }
+    p {
+        @include white-paragraph;
+    }
+    [class*="col-"] {
+        height: 70vh;
+    }
+}
+
+#onboard {
     background-color: $primary-green;
     padding: 50px 0;
-    
-        h2 {
-            @include h2-header;
-        }
-        h5 {
-            @include h5-header;
-        }
-        p {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            margin-right: 30px;
+    h2 {
+        @include h2-header;
+    }
+    h5 {
+        @include h5-header;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-right: 30px;
+    }
+    .takpapp-container {
+        @include takpapp;
+    }
+    p {
+        margin-right: 20px;
+        display: inline-block;
+    }
+    .takpapp {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+}
 
-        }
-        .takpapp-container {
-            @include takpapp;
-        }
-                p {
-                    margin-right: 20px;
-                    display: inline-block;
-                }
-                .takpapp {
-                    font-size: 12px;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    letter-spacing: 0.3px;
-                }
- }
- #shop {
-     background-color: #f6f7fa;
-     display: flex;
-     padding: 100px 0;
-     align-items: center;
-
-        .col-6 {
-            padding: 30px;
-            &:hover {
-                background-color: $font-color;
-                box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.5);
-                .top-button {
-                    background-color: $button-hover;
-                }
+#shop {
+    background-color: #f6f7fa;
+    display: flex;
+    padding: 100px 0;
+    align-items: center;
+    .col-6 {
+        padding: 30px;
+        &:hover {
+            background-color: $font-color;
+            box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.5);
+            .top-button {
+                background-color: $button-hover;
             }
-
-
+        }
         h2 {
             @include h2-header;
             color: $dark-font-color;
-            
         }
         p {
             @include grey-paragraph;
@@ -349,7 +410,7 @@ header {
             background-color: #e1e1e1;
             color: $font-color;
             transition: 0.5s;
-            border:none;
+            border: none;
             font-size: 11px;
             font-weight: 600;
             line-height: 22px;
@@ -367,90 +428,87 @@ header {
             color: $font-color;
             border: none;
             transition: 0.5s;
-
         }
         .icons {
-            margin-top:20px;
+            margin-top: 20px;
             .fa {
                 color: #c5c5c5;
                 font-size: 26px;
                 margin-right: 10px;
             }
         }
-        
     }
     .takpapp-container {
         @include takpapp;
     }
-            p {
-                margin-right: 20px;
-                display: inline-block;
-                color:  black;
-            }
-            .takpapp {
-                font-size: 12px;
-                font-weight: 400;
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-            }
+    p {
+        margin-right: 20px;
+        display: inline-block;
+        color: black;
+    }
+    .takpapp {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
 }
+
 footer {
     background-color: #192431;
-
     .row {
         display: flex;
         align-items: flex-start;
     }
-
     [class*="col-"] {
         padding: 20px;
     }
-
-        input {
-            width: 80%;
-            height: 55px;
-            border: none;
-            border-radius: 3px 0 0 3px;
-            margin: 0;
-            padding: 0;
+    input {
+        width: 80%;
+        height: 55px;
+        border: none;
+        border-radius: 3px 0 0 3px;
+        margin: 0;
+        padding: 0;
+    }
+    .check {
+        background-color: $primary-green;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 55px;
+        height: 55px;
+        border: none;
+        color: #fff;
+        border-radius: 0 3px 3px 0;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            background-color: $button-hover;
         }
-        .check {
-            background-color: $primary-green;
-            display:inline-block;
-            margin: 0;
-            padding: 0;
-            width: 55px;
-            height: 55px;
-            border: none;
-            color: #fff;
-            border-radius: 0 3px 3px 0;
-            cursor: pointer;
-            transition: 0.5s;
-                &:hover {
-                background-color: $button-hover;
-                }
-        }
-        p {
-            @include white-paragraph;
-        }
-        h5 {
-            @include h5-header;
-        }
-
+    }
+    p {
+        @include white-paragraph;
+    }
+    h5 {
+        @include h5-header;
+    }
 }
+
 @media (min-width:1200px) and (max-width:1370px) {
     .container {
         max-width: 1100px;
-
     }
-    #shop, #onboard, #details {
+    #shop,
+    #onboard,
+    #details {
         .takpapp-container {
-            left:-90px;
+            left: -90px;
         }
     }
     #onboard {
         h2 {
-            font-size:34px;
+            font-size: 34px;
         }
     }
     #gallery {
@@ -458,19 +516,18 @@ footer {
             bottom: -200px;
         }
     }
-    
 }
+
 @media (min-width:992px) and (max-width:1199px) {
     header {
         .iphone {
-            bottom:-20vh;
-            height:78vh;
+            bottom: -20vh;
+            height: 78vh;
             right: 0vh;
         }
     }
     .container {
         max-width: 980px;
-
     }
     #gallery {
         h4 {
@@ -483,72 +540,102 @@ footer {
 }
 
 @media (min-width:768px) and (max-width:991px) {
-   
-
-    .col-md-1 {width: 8.334%}
-    .col-md-2 {width: 16.667%}
-    .col-md-3 {width: 25%}
-    .col-md-4 {width: 33.334%}
-    .col-md-5 {width: 41.667%}
-    .col-md-6 {width: 50%}
-    .col-md-7 {width: 58.334%}
-    .col-md-8 {width: 66.667%}
-    .col-md-9 {width: 75%}
-    .col-md-10 {width: 83.334%}
-    .col-md-11 {width: 91.667%}
-    .col-md-12 {width: 100%}
-
+    .col-md-1 {
+        width: 8.334%
+    }
+    .col-md-2 {
+        width: 16.667%
+    }
+    .col-md-3 {
+        width: 25%
+    }
+    .col-md-4 {
+        width: 33.334%
+    }
+    .col-md-5 {
+        width: 41.667%
+    }
+    .col-md-6 {
+        width: 50%
+    }
+    .col-md-7 {
+        width: 58.334%
+    }
+    .col-md-8 {
+        width: 66.667%
+    }
+    .col-md-9 {
+        width: 75%
+    }
+    .col-md-10 {
+        width: 83.334%
+    }
+    .col-md-11 {
+        width: 91.667%
+    }
+    .col-md-12 {
+        width: 100%
+    }
     header {
         .iphone {
-        bottom: -17vh;
-        height: 71vh;
-        right: 0vw;
+            bottom: -17vh;
+            height: 71vh;
+            right: 0vw;
         }
     }
     .container {
         max-width: 710px;
     }
-    #gallery, #details, footer {
+    #gallery,
+    #details,
+    footer {
         .row {
-            display:initial;
+            display: initial;
         }
     }
-    #shop, #onboard, #details {
+    #shop,
+    #onboard,
+    #details {
         .takpapp-container {
-            left:-70px;
+            left: -70px;
         }
     }
     #shop {
         padding: 50px 0;
     }
     footer [class*="col-"] {
-        margin-left:0;
+        margin-left: 0;
     }
 }
-@media (min-width:576px) and (max-width:767px) {
 
+@media (min-width:576px) and (max-width:767px) {
     [class*='col-md-'] {
         width: 100%;
     }
-  
     header {
         .iphone {
-        bottom: -13vh;
-        height: 64vh;
-        right: -2vw;
+            bottom: -13vh;
+            height: 64vh;
+            right: -2vw;
         }
     }
     .container {
         max-width: 520px;
     }
-    #gallery, #details, #onboard, footer, #shop {
+    #gallery,
+    #details,
+    #onboard,
+    footer,
+    #shop {
         .row {
-            display:initial;
+            display: initial;
         }
     }
-    #shop, #onboard, #details {
+    #shop,
+    #onboard,
+    #details {
         .takpapp-container {
-            left:-70px;
+            left: -70px;
         }
     }
     #shop {
@@ -567,39 +654,45 @@ footer {
     footer [class*="col-"] {
         padding: 3px;
         margin-left: 0;
-
     }
-    
 }
+
 @media (max-width:576px) {
     [class*='col-md-'] {
         width: 100%;
     }
-  
     header {
         h1 {
             font-size: 30px;
         }
         .iphone {
-        bottom: -13vh;
-        height: 56vh;
-        right: -2vw;
+            bottom: -13vh;
+            height: 56vh;
+            right: -2vw;
         }
         .takpapp-container {
-            left:-70px;
+            left: -70px;
         }
     }
     .container {
         max-width: 340px;
     }
-    #gallery, #details, #onboard, footer, #shop, #text, #options {
+    #gallery,
+    #details,
+    #onboard,
+    footer,
+    #shop,
+    #text,
+    #options {
         .row {
-            display:initial;
+            display: initial;
         }
     }
-    #shop, #onboard, #details {
+    #shop,
+    #onboard,
+    #details {
         .takpapp-container {
-            left:-70px;
+            left: -70px;
         }
     }
     #shop {
@@ -607,7 +700,7 @@ footer {
     }
     #gallery {
         .sea {
-            display:none;
+            display: none;
         }
     }
     #options {
@@ -618,13 +711,8 @@ footer {
     footer [class*="col-"] {
         padding: 3px;
         margin-left: 0;
-
-       
     }
     footer [class*="col-2"] {
         width: 32%;
     }
-    
 }
-
-    

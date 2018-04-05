@@ -14,7 +14,8 @@ header [class*="col-"] {
   margin: 0 auto;
   position: relative; }
 
-.row:before, .row:after {
+.row:before,
+.row:after {
   content: "";
   clear: both;
   display: table; }
@@ -398,7 +399,9 @@ footer {
   .container {
     max-width: 1100px; }
 
-  #shop .takpapp-container, #onboard .takpapp-container, #details .takpapp-container {
+  #shop .takpapp-container,
+  #onboard .takpapp-container,
+  #details .takpapp-container {
     left: -90px; }
 
   #onboard h2 {
@@ -464,10 +467,14 @@ footer {
   .container {
     max-width: 710px; }
 
-  #gallery .row, #details .row, footer .row {
+  #gallery .row,
+  #details .row,
+  footer .row {
     display: initial; }
 
-  #shop .takpapp-container, #onboard .takpapp-container, #details .takpapp-container {
+  #shop .takpapp-container,
+  #onboard .takpapp-container,
+  #details .takpapp-container {
     left: -70px; }
 
   #shop {
@@ -487,10 +494,16 @@ footer {
   .container {
     max-width: 520px; }
 
-  #gallery .row, #details .row, #onboard .row, footer .row, #shop .row {
+  #gallery .row,
+  #details .row,
+  #onboard .row,
+  footer .row,
+  #shop .row {
     display: initial; }
 
-  #shop .takpapp-container, #onboard .takpapp-container, #details .takpapp-container {
+  #shop .takpapp-container,
+  #onboard .takpapp-container,
+  #details .takpapp-container {
     left: -70px; }
 
   #shop {
@@ -521,10 +534,18 @@ footer {
   .container {
     max-width: 340px; }
 
-  #gallery .row, #details .row, #onboard .row, footer .row, #shop .row, #text .row, #options .row {
+  #gallery .row,
+  #details .row,
+  #onboard .row,
+  footer .row,
+  #shop .row,
+  #text .row,
+  #options .row {
     display: initial; }
 
-  #shop .takpapp-container, #onboard .takpapp-container, #details .takpapp-container {
+  #shop .takpapp-container,
+  #onboard .takpapp-container,
+  #details .takpapp-container {
     left: -70px; }
 
   #shop {
